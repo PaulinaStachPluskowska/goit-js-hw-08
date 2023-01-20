@@ -30,7 +30,7 @@ else{
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-  console.log(localStorage.getItem('feedback-form-state'));
+  console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
   form.elements.email.value = '';
   form.elements.message.value = '';
   localStorage.removeItem('feedback-form-state');

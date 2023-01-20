@@ -17,7 +17,7 @@ player.on(
   }, 1000)
 );
 
-currentTime = localStorage.getItem('videoplayer-current-time');
+let currentTime = localStorage.getItem('videoplayer-current-time');
 player.setCurrentTime(currentTime || 0);
 
 // console.log(currentTime);
